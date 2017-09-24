@@ -19,6 +19,7 @@ public class TestController {
     @RequestMapping("/{id}")
     public TestTable queryById(@PathVariable Long id) {
         log.info("进入控制器，请求参数是" + id);
+        log.info("test push");
         return testService.getTestTable(id);
 
     }
